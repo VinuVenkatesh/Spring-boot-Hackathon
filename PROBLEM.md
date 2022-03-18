@@ -14,21 +14,21 @@ Need to build two microservices, which uses  MySQL /  MONGO DB. Data Access / Va
 
 ###  Microservice1 - REST API Development with MySQL
      Group id : com.cgi 
-     Artifact: driver
+     Artifact : driver
 
 #### Create a REST controller with the following core features (endpoints)
     • Post new driver details 
     • Get all driver details 
-    • Delete details of a driver for the given driverID 
+    • Delete details of a driver for the given driverid 
 
 ### A driver model will have the following attributes:
-    • driverid : int - Primarkey
-    • first name : string
-    • telephone number : number 
-    • address : string
-    • city : string
-    • engine size : string 
-    • quote amount : string
+    • driverid        : int - Primarkey
+    • firstname       : string
+    • telephonenumber : number 
+    • address         : string
+    • city            : string
+    • enginesize      : string 
+    • quoteamount     : string
 
     Database name : DRIVERDB
 
@@ -50,13 +50,13 @@ Need to build two microservices, which uses  MySQL /  MONGO DB. Data Access / Va
 #### Model
     Class : Insurance  
         • insuranceid : string – primary key
-        • type : string
-        • Plan : Plan class (embedded document)
+        • type        : string
+        • Plan        : Plan class (embedded document)
     Class : Plan
-        • planid : string
+        • planid   : string
         • planname : string
-        • period: number
-        • amount: number
+        • period   : number
+        • amount   : number
 
     Database Name: insurancedb
 
@@ -103,5 +103,5 @@ Insurance is the base document and plan will be embedded document. While adding 
     • Ensure you have used clean code and project structure to ensure that maintainability has been considered. 
     • Use Swagger UI / Postman to submit the details to the REST controller to test the post endpoint. 
     • Run the all endpoints. 
-    • Push your code to gitlan and add mentor to your repo for review
+    • Push your code to gitlab and add mentor to your repo for review
     
