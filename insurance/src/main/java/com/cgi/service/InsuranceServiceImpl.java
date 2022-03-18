@@ -37,10 +37,12 @@ public class InsuranceServiceImpl implements InsuranceService {
 						equal = true;
 					}
 				}
+				
 				if(!equal) {
 					savedPlans.add(plan);
-					equal = false;
+					
 				}
+				equal = false;
 			}
 			if(size < savedPlans.size()) {
 				obj.setPlan(savedPlans);
